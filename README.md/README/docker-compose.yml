@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  mysql:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: mysql-8.3-container
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: Souta7264
+      MYSQL_DATABASE: docker-compose.yml
+      MYSQL_USER: maturi317
+      MYSQL_PASSWORD: Souta0726
